@@ -15,7 +15,7 @@ public class Cuenta {
 	/**id de Cuenta bancaria*/
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idCuentaCliente;
+        private Integer idCuentaCliente;
 
 
 	@ManyToOne
@@ -25,9 +25,6 @@ public class Cuenta {
                     })
 	private Cuenta cuenta;
 	
-	
-	
-
 	@ManyToOne
 	@JoinColumns({
                 @JoinColumn(name = "ID_CUENTA")
