@@ -34,60 +34,57 @@ private Integer saldoactual;
 
 
 
-
-
 public Integer getIdPagocredito() {
 			return this.idpagocredito;
 		}
 
-	public void setIdPagocredito(Integer idpagocredito) {
+public void setIdPagocredito(Integer idpagocredito) {
 			this.idpagocredito = idpagocredito;
 	                         }
 
 
 
-    public LocalDate getFcinicio() {
+public LocalDate getFcinicio() {
 				return this.fcinicio;
 			}
 
-	public void setFcinicio(LocalDate fcinicio) {
+public void setFcinicio(LocalDate fcinicio) {
 				this.fcinicio = fcinicio;
 	                         }
 
 
-    public Integer getNmcuotas() {
+public Integer getNmcuotas() {
 				return this.nmcuotas;
 			}
 
-	public void setNmcuotas(Integer nmcuotas) {
+public void setNmcuotas(Integer nmcuotas) {
 				this.nmcuotas = nmcuotas;
 	                         }
 
 
-    public LocalDate getFcpagomensual() {
+public LocalDate getFcpagomensual() {
 					return this.fcpagomensual;
 				}
 
-	public void setFcpagomensual(LocalDate fcpagomensual) {
+public void setFcpagomensual(LocalDate fcpagomensual) {
 					this.fcpagomensual = fcpagomensual;
 	                         }
 
 
-    public Integer getSaldoinicial() {
+public Integer getSaldoinicial() {
 					return this.saldoinicial;
 				}
 
-	public void setSaldoinicial(Integer saldoinicial) {
+public void setSaldoinicial(Integer saldoinicial) {
 					this.saldoinicial = saldoinicial;
 		                         }
 
 
-
-    public Integer getSaldoactual() {
+public Integer getSaldoactual() {
 						return this.saldoactual;
 					}
 
-	public void setSaldoactual(Integer saldoactual) {
+public void setSaldoactual(Integer saldoactual) {
 						this.saldoactual = saldoactual;
 		                         }
 
