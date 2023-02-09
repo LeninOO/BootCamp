@@ -16,6 +16,10 @@ public class TipoTarjeta {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idTipoTarjeta;
 
+        @OneToMany
+	@JoinColumn(name ="ID_Cuenta")
+	private Cuenta cuenta;
+
 	@ManyToOne
 	@JoinColumn(name ="ID_CREDITO")
 	private TarjetaCredito tjCredito;
