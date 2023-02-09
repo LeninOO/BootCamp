@@ -27,11 +27,20 @@ public class Cuenta {
 	@JoinColumn(name ="ID_TIPO_CLIENTE")
 	private TipoCliente tipoCliente;
 
-	private String fcTransaccion; //Responsable de los movimientos de la cuenta
-
-    private String fcAltaFila;
+	private String fcTransaccion; //
+        
+	/**
+	 * fecha de la transaccion
+	 */
+        private String fcAltaFila;
+	/**
+	 * fecha del alta de la cuenta
+	 */
 
 	private String fcBajaFila; //
+	/**
+	 * baja de la tabla
+	 */
 
 	private String fcModifFila
 
@@ -54,21 +63,21 @@ public class Cuenta {
 		this.fcAltaFila = fcAltaFila;
 	}
 
-    public String  getFcBajafila() {
+        public String  getFcBajafila() {
 			return this.fcBajaFila;
 		}
 
-		public void setFcBajaFila(String fcBajaFila) {
+	public void setFcBajaFila(String fcBajaFila) {
 			this.fcBajaFila = fcBajaFila;
 	}
 
 
 
-    public String  getFcModifFila() {
+       public String  getFcModifFila() {
 			return this.fcModifFila;
 		}
 
-		public void setFcModifFila(String fcModifFila) {
+	public void setFcModifFila(String fcModifFila) {
 			this.fcModifFila = fcModifFila;
 	}
 
