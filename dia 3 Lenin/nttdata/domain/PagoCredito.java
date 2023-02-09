@@ -13,27 +13,30 @@ import jakarta.persistence.Table;
 public class PagoCredito {
 
 	/**id de prestamos*/
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@OneToMany
+@JoinColumn(name ="ID_CUENTA")
+private Cuenta cuenta;
 
 
-	private Integer idpagocredito;
+private Integer idpagocredito;
 
-	private LocalDate fcinicio;
+private LocalDate fcinicio;
 
-	private Integer nmcuotas;
+private Integer nmcuotas;
 
-    private LocalDate fcpagomensual;
+private LocalDate fcpagomensual;
 
-    private Integer saldoinicial;
+private Integer saldoinicial;
 
-	private Integer saldoactual;
-
-
+private Integer saldoactual;
 
 
 
-    public Integer getIdPagocredito() {
+
+
+public Integer getIdPagocredito() {
 			return this.idpagocredito;
 		}
 
