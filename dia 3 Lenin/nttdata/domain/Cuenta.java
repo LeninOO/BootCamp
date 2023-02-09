@@ -16,19 +16,15 @@ public class Cuenta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
-
-
-
 	@ManyToOne
 	@JoinColumn(name ="ID_OPERACION")
 	private Operaciones operaciones;
-
 
 	@ManyToOne
 	@JoinColumn(name ="ID_TIPO_TARJETA")
 	private TipoTarjeta tipotarjeta;
 
-    @ManyToOne
+        @ManyToOne
 	@JoinColumn(name ="ID_PAGO_CREDITO")
 	private PagoCredito pagocredito;
 
@@ -37,27 +33,27 @@ public class Cuenta {
 	private CuentaCliente cuentacliente;
 
 
-	private Integer idCuenta;
+        private Integer idCuenta;
 
-	private String nmcuenta; //Responsable de los movimientos de la cuenta
+        private String nmcuenta; //Responsable de los movimientos de la cuenta
 
-    private String fcaltafila;
+        private String fcaltafila;
 
-	private String fcbajafila; //
+        private String fcbajafila; //
 
-	private String fcmodiffila
+        private String fcmodiffila
 
-    private Integer idtransaccion;
+        private Integer idtransaccion;
 
-    private Integer idtarjeta;
+        private Integer idtarjeta;
 
-    private Integer idprestamos;
+        private Integer idprestamos;
 
-    private Integer nmcuotas;
+        private Integer nmcuotas;
 
-    private Integer tjasocprincipal;
+        private Integer tjasocprincipal;
 
-    private Integer  tjasocsecundaria;
+        private Integer  tjasocsecundaria;
 
 
 
