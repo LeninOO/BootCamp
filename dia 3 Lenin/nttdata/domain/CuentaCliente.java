@@ -19,28 +19,31 @@ public class Cuenta {
 
 
 	@ManyToOne
-	@JoinColumn(name ="ID_CUENTA")
+	@JoinColumns({
+                @JoinColumn(name = "ID_CUENTA")
+                @JoinColumn(name = "ID_TIPO_CLIENTE")
+                    })
 	private Cuenta cuenta;
-
+	
+	
+	
 
 	@ManyToOne
-	@JoinColumn(name ="ID_TIPO_CLIENTE")
+	@JoinColumns({
+                @JoinColumn(name = "ID_CUENTA")
+                @JoinColumn(name = "ID_TIPO_CLIENTE")
+                    })
 	private TipoCliente tipoCliente;
 
-	private String fcTransaccion; //
+	
+	private String fcTransaccion; //fecha de la transaccion
         
-	/**
-	 * fecha de la transaccion
-	 */
-        private String fcAltaFila;
-	/**
-	 * fecha del alta de la cuenta
-	 */
+	
+        private String fcAltaFila; // fecha del alta de la cuenta
+	
 
-	private String fcBajaFila; //
-	/**
-	 * baja de la tabla
-	 */
+	private String fcBajaFila; // baja de la tabla
+	
 
 	private String fcModifFila
 
