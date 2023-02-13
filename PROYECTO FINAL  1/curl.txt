@@ -1,0 +1,6 @@
+
+##################  AÑADIR  UNA  FILA ################################################
+curl -X POST http://localhost:8080/film -H 'Content-Type:application/json' -d '{"name":" CASABLANCA","icdn":"1238-345"}' -v
+
+####################### CONSULTAR  CUANTAS  FILAS  HAY ###########################################################
+curl  http://localhost:8080/film 
